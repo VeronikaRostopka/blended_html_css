@@ -1,5 +1,5 @@
-/* font-family: "Inter" , sans-serif; */
-/* font-family: "Montserrat" , sans-serif; */
+/* font-family: 'Inter', sans-serif;
+font-family: 'Montserrat', sans-serif; */
 
 body {
   font-family: "Poppins", sans-serif;
@@ -9,16 +9,19 @@ body {
   background-color: #fff;
 }
 
+/*#region Reset*/
 a {
   text-decoration: none;
   color: currentColor;
 }
+
 ul,
 ol {
-  list-style: none;
-  padding: 0;
+  list-style-type: none;
   margin: 0;
+  padding: 0;
 }
+
 h1,
 h2,
 h3,
@@ -30,16 +33,19 @@ p {
 }
 
 img {
-  max-width: 100%;
   display: block;
+  max-width: 100%;
   height: auto;
 }
 
 button {
-  border: none;
   cursor: pointer;
+  border: none;
   padding: 0;
 }
+/*#endregion Reset*/
+
+/*#region Utils*/
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -52,35 +58,45 @@ button {
   clip-path: inset(100%);
   margin: -1px;
 }
+/*#endregion Utils*/
 
+/*#region Common*/
 .container {
   max-width: 1150px;
-  width: 100%;
   padding: 0 20px;
   margin: 0 auto;
 }
+
 .logo {
   display: flex;
   align-items: center;
   gap: 16px;
+
   font-weight: 700;
   font-size: 30px;
-  line-height: 0.93333;
+  line-height: 0.93;
   color: #173a56;
 }
-.page-header {
-  padding: 22px 0;
-}
+/*#endregion Common*/
 
+/*#region Header*/
+.header-nav,
+.auth-list,
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+}
+.header-container {
   gap: 73px;
 }
 
 .header-nav {
+  justify-content: space-between;
   flex-grow: 1;
+}
+
+.header-logo {
+  padding: 22px 0;
 }
 
 .header-nav-list {
@@ -94,49 +110,40 @@ button {
   padding: 26px 0;
   line-height: 1.75;
 }
+
 .header-nav-link.current {
   font-weight: 600;
 }
 
 .auth-list {
-  display: flex;
-  align-items: center;
   gap: 21px;
 }
+
 .auth-link {
   display: block;
   min-width: 105px;
   padding: 8px 23px;
   border: 1px solid #bcd0e5;
   border-radius: 4px;
-  color: #fff;
+  background-color: #fff;
 
   font-weight: 600;
   text-align: center;
   color: #173a56;
 }
-.auth-link-dark {
-  display: block;
-  min-width: 105px;
-  padding: 8px 23px;
-  border: 1px solid #bcd0e5;
-  border-radius: 4px;
-  color: #fff;
 
-  font-weight: 600;
-  text-align: center;
-  color: #173a56;
-}
 .auth-link-dark,
 .auth-link:hover,
 .auth-link:focus {
-  border-color: #02897a;
+  border-color: transparent;
   color: #fff;
   background-color: #02897a;
 }
+
 .auth-link-dark:hover,
 .auth-link-dark:focus {
   border-color: #bcd0e5;
   color: #173a56;
   background-color: #fff;
 }
+/*#endregion Header*/

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
         integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
@@ -21,13 +21,12 @@
 
     <header class="page-header">
         <div class="container header-container">
-            <a class="logo" href="index.html">
-                <img src="./images/logo.svg" alt="logo" width="40" height="36">Product
-            </a>
-
             <nav class="header-nav">
+                <a class="logo header-logo">
+                    <img src="./images/logo.svg" width="40" height="36" alt="Logotype" />Product
+                </a>
                 <ul class="header-nav-list">
-                    <li class="header-nav-item"><a class="header-nav-link" href="index.html">Product</a></li>
+                    <li class="header-nav-item"><a class="header-nav-link current" href="./index.html">Product</a></li>
                     <li class="header-nav-item"><a class="header-nav-link" href="pricing.html">Pricing</a></li>
                     <li class="header-nav-item"><a class="header-nav-link" href="customers.html">Customers</a></li>
                     <li class="header-nav-item"><a class="header-nav-link" href="resources.html">Resources</a></li>
@@ -35,8 +34,12 @@
             </nav>
 
             <ul class="auth-list">
-                <li class="auth-item"><a class="auth-link" href="signin.html">Sign in</a></li>
-                <li class="auth-item"><a class="auth-link-dark" href="signup.html">Sign up</a></li>
+                <li class="auth-item">
+                    <a class="auth-link" href="">Sign In</a>
+                </li>
+                <li class="auth-item">
+                    <a class="auth-link auth-link-dark" href="">Sign Up</a>
+                </li>
             </ul>
         </div>
     </header>
